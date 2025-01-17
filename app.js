@@ -40,7 +40,7 @@ async function scrapeKompas() {
 // Function to send message to Telegram
 async function sendToTelegram(message) {
     const telegramApiUrl = `https://api.telegram.org/bot7711846074:AAGj4_dXCmhOmfGFB3lBRI2c7KgkaigyGQw/sendMessage`;
-    const chatId = '4668192302';
+    const chatId = '-4668192302';
     
     const url = `${telegramApiUrl}?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
     
