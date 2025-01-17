@@ -61,7 +61,7 @@ async function sendToTelegram(message) {
 
 // Start scraping and send the news
 async function startScraping() {
-    const news = await scrapeKompas();
+    // const news = await scrapeKompas();
 
     const message = `mesage hereeeeee`;
     await sendToTelegram(message);
