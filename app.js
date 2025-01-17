@@ -62,13 +62,16 @@ async function sendToTelegram(message) {
 // Start scraping and send the news
 async function startScraping() {
     const news = await scrapeKompas();
+
+    const message = `mesage hereeeeee`;
+    await sendToTelegram(message);
     
-    if (news.length > 0) {
-        const message = `Latest news:\n${news.join('\n')}`;
-        await sendToTelegram(message);
-    } else {
-        console.log("No news found.");
-    }
+    // if (news.length > 0) {
+    //     const message = `Latest news:\n${news.join('\n')}`;
+    //     await sendToTelegram(message);
+    // } else {
+    //     console.log("No news found.");
+    // }
 }
 
 // Call the function to start the scraping and sending process
